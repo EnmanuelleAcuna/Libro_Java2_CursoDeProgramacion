@@ -6,6 +6,6 @@ class CHolaMundo {
     * Puede estar vacía.
     */
     public static void main (String[] args) {
-        System.out.println("¡Hola Enmanuelle!");
+        System.out.println("¡Hola Mundo!");
     }
 }
