@@ -1,9 +1,12 @@
+import java.lang.System;
+
 class COrdenador {
 	String marca;
 	String procesador;
 	int peso;
 	boolean encendido = false;
 	boolean pantalla = false;
+	static byte Garantia;
 
 	public void EncenderOrdenador()	{
 		if (encendido == true) {
@@ -35,6 +38,13 @@ class COrdenador {
 		else {
 			System.out.print("\nLa pantalla está apagada.");
 		}
+
+		if (Garantia == 1){
+			System.out.print("\nLa garantía esta vigente.");
+		}
+		else {
+			System.out.print("\nLa garantía NO esta vigente.");
+		}
 	}
 
 	public String ObtenerMarca() {
@@ -43,5 +53,9 @@ class COrdenador {
 
 	public void EstablecerMarca(String ma) {
 		marca = ma;
+	}
+
+	public static void EstablecerGarantia(byte G){
+		Garantia = G; // Garantía es una miembro de la clase
 	}
 }
